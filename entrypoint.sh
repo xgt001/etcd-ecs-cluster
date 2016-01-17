@@ -14,7 +14,7 @@ if [ -z $ETCD_TOKEN ]
  then
   cd /opt/etcd
   ./etcd \
-    -name etcd \
+    -name etcd0 \
     -advertise-client-urls http://$PUBLIC_V4:2379,http://$PUBLIC_V4:4001 \
     -listen-client-urls http://0.0.0.0:2379,http://0.0.0.0:4001 \
     -initial-advertise-peer-urls http://$PUBLIC_V4:2380 \
