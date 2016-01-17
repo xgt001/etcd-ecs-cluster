@@ -1,0 +1,45 @@
+"containerDefinitions": [
+    {
+      "volumesFrom": [],
+      "memory": 150,
+      "extraHosts": null,
+      "dnsServers": null,
+      "disableNetworking": null,
+      "dnsSearchDomains": null,
+      "portMappings": [
+        {
+          "hostPort": 4001,
+          "containerPort": 4001,
+          "protocol": "tcp"
+        },
+        {
+          "hostPort": 2379,
+          "containerPort": 2379,
+          "protocol": "tcp"
+        },
+        {
+          "hostPort": 2380,
+          "containerPort": 2380,
+          "protocol": "tcp"
+        }
+      ],
+      "hostname": null,
+      "essential": true,
+      "entryPoint": null,
+      "mountPoints": [],
+      "name": "etcd-ecs-ul",
+      "ulimits": null,
+      "dockerSecurityOptions": null,
+      "environment": [],
+      "links": null,
+      "workingDirectory": null,
+      "readonlyRootFilesystem": null,
+      "image": "<your-repo for etcd>",
+      "command": null,
+      "user": null,
+      "dockerLabels": null,
+      "logConfiguration": null,
+      "cpu": 1,
+      "privileged": null
+    }
+  ]
